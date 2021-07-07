@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>&#x1F34C;Экзотические фрукты</title>
+  </head>
+
+  <body>
+    <main>
+      <!-- ПАНЕЛЬ УПРАВЛЕНИЯ -->
+      <section class="panel__wrapper">
+        <h2 class="wrapper__title">Панель управления</h2>
+
+        <div class="panel__devtools">
+          <button class="shuffle__btn line">Перемешать</button>
+
+          <div class="line">
+            <!-- пользователь указывает нижнюю границу weight -->
+            <div>min weight:</div>
+            <input class="minweight__input" />
+          </div>
+
+          <div class="line">
+            <!-- пользователь указывает верхнюю границу weight -->
+            <div>max weight:</div>
+            <input class="maxweight__input" />
+          </div>
+
+          <button class="filter__btn line">Фильтровать</button>
+
+          <div class="line">
+            <span>Алгоритм сортировки:</span>
+            <span class="sort__kind"></span>
+          </div>
+
+          <div class="line">
+            <span>Время сортировки: </span>
+            <span class="sort__time"></span>
+          </div>
+
+          <button class="sort__change__btn line">Сменить алгоритм сортировки</button>
+
+          <button class="sort__action__btn line">Сортировать</button>
+
+          <!-- пользователь указывает значения характеристик будущего фрукта -->
+          <div class="line">
+            <div>kind:</div>
+            <input class="kind__input newFruit" />
+          </div>
+
+          <div class="line">
+            <div>color:</div>
+            <select class="color__input">
+              <option value="фиолетовый" class="fruit_violet">фиолетовый</option>
+              <option value="зеленый" class="fruit_green">зеленый</option>
+              <option value="розово-красный" class="fruit_carmazin">розово-красный</option>
+              <option value="желтый" class="fruit_yellow">желтый</option>
+              <option value="светло-коричневый" class="fruit_lightbrown">светло-коричневый</option>
+            </select>
+          </div>
+
+          <div class="line">
+            <div>weight:</div>
+            <input class="weight__input newFruit" />
+          </div>
+
+          <button class="add__action__btn line">Добавить фрукт</button>
+          <button class="addX100__action__btn line">Добавить 100 случайных</button>
+        </div>
+      </section>
+
+      <!-- СПИСОК ЭКЗОТИЧЕСКИХ ФРУКТОВ -->
+      <section class="fruits__wrapper">
+        <div class="warning"></div>
+        <h2 class="wrapper__title">Список экзотических фруктов</h2>
+        <ul class="fruits__list">
+
+        </ul>
+      </section>
+    </main>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
